@@ -1,37 +1,117 @@
 * {
-    box-sizing: border-box;
-    font-size: 18px;
+  box-sizing: border-box;
+  font-size: 18px;
 }
 
 .wrapper {
-    width: 1110px;
+  width: 1110px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-
-
 .logo {
-    font-family: roboto;
-    font-weight: 200;
-    font-size: 30px;
-    line-height: 30px;
-    color: #555252;
+  font-family: roboto;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 32px;
+  color: #555252;
+  letter-spacing: -0.02em;
+}
+
+p.logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .logo::first-letter {
-    color: #1abc9c;
+  color: #1abc9c;
 }
 
-.nav {}
-
-li {
-    list-style: none;
+.nav a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0f0101;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: right;
 }
 
-font-family: 'Open Sans',
-sans-serif;
-font-family: 'Roboto',
-sans-serif;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  outline: 1px solid green;
+}
+
+.nav a:hover {
+  color: #1abc9c;
+}
+
+section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.products h2 {
+  color: #515151;
+}
+
+.products h2::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  content: "";
+  background-color: #1abc9c;
+  margin: 0 auto;
+}
+
+.products-list a {
+  text-decoration: none;
+}
+
+.products-list img {
+  display: block;
+  width: 255px;
+  height: 282px;
+  background-color: #e9f0fd;
+}
+.products-list p {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  background-color: #323232;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.price p {
+  display: inline-block;
+  width: 55px;
+  height: 40px;
+  background-color: #8c8c8c;
+}
+
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
