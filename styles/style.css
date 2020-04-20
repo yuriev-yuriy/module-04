@@ -89,6 +89,9 @@ ul.nav {
   color: #1abc9c;
 }
 
+.products {
+  margin-bottom: 100px;
+}
 section h2 {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
@@ -172,6 +175,11 @@ section h2 {
   opacity: 0.44;
   text-align: center;
   padding-left: 0px;
+}
+
+.blog h2 {
+  margin: 0;
+  margin-bottom: 80px;
 }
 
 .blog h2::after {
