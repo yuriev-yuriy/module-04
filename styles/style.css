@@ -26,9 +26,12 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
-  font-family: "Roboto",
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 30px;
   line-height: 32px;
@@ -41,7 +44,6 @@ a.logo {
   float: left;
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
 ul.nav {
@@ -68,7 +70,6 @@ ul.nav {
 }
 
 .nav a {
-  text-decoration: none;
   font-family: "Open Sans", sans-serif;
   letter-spacing: -0.02em;
   font-size: 14px;
@@ -76,7 +77,6 @@ ul.nav {
   color: #0f0101;
   font-weight: bold;
   text-transform: uppercase;
-  /* float: left; */
 }
 
 .clearfix::after {
@@ -113,7 +113,6 @@ section h2 {
   margin-top: 32px;
 }
 
-
 .products ul,
 .blog ul {
   margin: 0;
@@ -133,7 +132,7 @@ section h2 {
   margin-right: 0px;
 }
 
-.product-item:nth-child(n+5) {
+.product-item:nth-child(n + 5) {
   margin-bottom: 0;
 }
 
@@ -144,9 +143,7 @@ section h2 {
   background-color: #e9f0fd;
 }
 
-
 .product-item p {
-  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   line-height: 32px;
@@ -189,6 +186,13 @@ section h2 {
 
 .blog-list-item {
   width: 350px;
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.blog-list-item:nth-child(3) {
+  margin-right: 0px;
 }
 
 .blog-list-item h3 {
@@ -197,19 +201,40 @@ section h2 {
   line-height: 26px;
   letter-spacing: -0.02em;
   color: #555252;
+  margin-bottom: 26px;
+  text-align: left;
 }
 
 .blog-list-item h3::after {
   display: block;
-  width: 164px;
-  height: 7px;
+  width: 136px;
+  height: 3px;
   content: "";
   background-color: #4ec6ab;
-  margin: 0 auto;
   margin-top: 32px;
 }
 
-font-family: "Open Sans",
-sans-serif;
-font-family: "Roboto",
-sans-serif;
+.blog-list-item p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+button {
+  width: 160px;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #4ec6ab;
+  cursor: pointer;
+}
+
+.blog {
+  margin-bottom: 44px;
+}
